@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget-tracker.css">
+    <title>Budget Tracker</title>
+</head>
+<body id="body">
+    <h1>Budget Tracker</h1>
+    <h4>Track your budget with this simple tool!</h4>
+    <form id="form">
+        <label for="in">Income
+            <input id="in" name="in-out" type="radio"></label>
+        <label for="out">Expense
+            <input id="out" name="in-out" type="radio">
+
+        </label>
+
+        <label for="amount" class="full-width">Amount
+            <input id="amount" name="amount" type="number" step="0,01">
+        </label>
+        <label for="reason" class="full-width">Reason
+            <input id="reason" name="reason" type="text">
+        </label>
+        <button type="submit" id="submit" class="full-width">Enter</button>
+
+    </form>
+    <div id="current-budget"><div id="value">0</div></div>
+    <div id="budget"></div>
+    <button id="scroll-button"><i id="arrow"></i></button>
+    <script src="budget-tracker.js"></script>
+</body>
+</html>
